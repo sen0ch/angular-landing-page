@@ -12,9 +12,8 @@ export class RestApiService {
 
   // Define API
   // apiURL = 'http://157.230.186.10/api/db.json';
-  // apiURL = 'http://sherris-macbook-pro.local:8000';
-  // apiURL = 'http://my-json-server.typicode.com/sen0ch/db';
-  apiURL = 'http://localhost:3000';
+  apiURL = 'http://my-json-server.typicode.com/sen0ch/db';
+  // apiURL = 'http://localhost:3000';
 
   constructor(private http: HttpClient) { }
 
