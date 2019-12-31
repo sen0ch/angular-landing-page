@@ -1,0 +1,41 @@
+
+<div class="container">
+
+  <!--shows when there are no items-->
+  <div class="no-data text-center" *ngIf="Item.length == 0">
+    <p>There are no items</p>
+    <button class="btn btn-outline-primary" routerLink="/create-item">Create Item</button>
+  </div>
+
+  <!--shows when there are items-->
+  <div *ngIf="Item.length !== 0">
+
+    <div class="col-md-12">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Headline</th>
+            <th scope="col">Description</th>
+            <th scope="col">Image</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of Item.slice(1)">
+            <td>{{item.id}}</td>
+            <td>{{item.headline}}</td>
+            <td>{{item.description}}</td>
+            <td>{{item.image}}</td>
+            <td>
+              <span class="btn btn-outline-primary" routerLink="/item-edit/{{item.id}}">Edit</span>
+              <span class="btn btn-outline-primary" (click)="deleteItem(item.id)">Delete</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>  
+</div>
+    

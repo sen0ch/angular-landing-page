@@ -1,0 +1,23 @@
+<div class="container custom-container">
+  <div class="col-md-12">
+    <h3 class="mb-3 text-center">Create item</h3>
+
+    <div class="form-group">
+      <input type="text" [(ngModel)]="itemDetails.headline" class="form-control" placeholder="Headline">
+    </div>
+
+    <div class="form-group">
+      <input type="text" [(ngModel)]="itemDetails.description" class="form-control" placeholder="Description">
+    </div>
+
+    <div class="form-group">
+      <input type="text" [(ngModel)]="itemDetails.image" class="form-control" placeholder="Image">
+    </div>
+
+    <div class="form-group">
+      <button class="btn btn-success btn-lg btn-block" (click)="addItem(1)">Create</button>
+    </div>
+
+  </div>
+</div>
+

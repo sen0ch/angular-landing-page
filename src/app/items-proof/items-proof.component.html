@@ -1,0 +1,127 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<div class="container">
+
+  <!--shows when there are no items-->
+  <div class="no-data text-center" *ngIf="Item.length == 0">
+      <p>There are no items.</p>
+      <button class="btn btn-outline-primary" routerLink="/create-item">Create Item</button>
+  </div>
+
+  <!--shows when there are items-->
+  <div *ngIf="Item.length !== 0">      
+
+  <!--LP-->
+  <style>
+    img {
+     width: 100%;
+     margin: 0;
+    }
+    .tile {
+      margin: 0px;
+      padding: 10px;
+    }
+    .ghost {
+      background-color: rgba(255, 255, 255, 0.90);
+      margin: 0;
+      padding: 10px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -moz-transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      }
+    h5 {
+      margin: 0;
+    }
+    p {
+      font-family: Helvetica, sans-serif;
+      font-size:1.1rem;
+      line-height:1.1rem;
+      margin: 5px 0;
+    }
+  </style>
+  
+  <div class="container">
+    <div class="row">
+  
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 tile">
+        <img src="./assets/images/{{ Item[1].image }}">
+        <div class="ghost">
+          <h5>{{ Item[1].headline }}</h5>
+          <p>{{ Item[1].description }}</p>
+        </div>
+      </div>
+  
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 tile">
+        <img src="./assets/images/{{ Item[2].image }}">
+        <div class="ghost">
+          <h5>{{ Item[2].headline }}</h5>
+          <p>{{ Item[2].description }}</p>
+        </div>
+      </div>
+  
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 tile">
+        <img src="./assets/images/{{ Item[3].image }}">
+        <div class="ghost">
+          <h5>{{ Item[3].headline }}</h5>
+          <p>{{ Item[3].description }}</p>
+        </div>
+      </div>
+  
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 tile">
+        <img src="./assets/images/{{ Item[4].image }}">
+        <div class="ghost">
+          <h5>{{ Item[4].headline }}</h5>
+          <p>{{ Item[4].description }}</p>
+        </div>
+      </div>
+  
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 tile">
+        <img src="./assets/images/{{ Item[5].image }}">
+        <div class="ghost">
+          <h5>{{ Item[5].headline }}</h5>
+          <p>{{ Item[5].description }}</p>
+        </div>
+      </div>
+  
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 tile">
+        <img src="./assets/images/{{ Item[6].image }}">
+        <div class="ghost">
+          <h5>{{ Item[6].headline }}</h5>
+          <p>{{ Item[6].description }}</p>
+        </div>
+      </div>
+  
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 tile">
+        <img src="./assets/images/{{ Item[7].image }}">
+        <div class="ghost">
+          <h5>{{ Item[7].headline }}</h5>
+          <p>{{ Item[7].description }}</p>
+        </div>
+      </div>
+  
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 tile">
+        <img src="./assets/images/{{ Item[8].image }}">
+        <div class="ghost">
+          <h5>{{ Item[8].headline }}</h5>
+          <p>{{ Item[8].description }}</p>
+        </div>
+      </div>
+  
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 tile">
+        <img src="./assets/images/{{ Item[9].image }}">
+        <div class="ghost">
+          <h5>{{ Item[9].headline }}</h5>
+          <p>{{ Item[9].description }}</p>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  
+  <!--/LP-->
+  
+  <br /><br />
+  </div>
