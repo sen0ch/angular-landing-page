@@ -60,5 +60,17 @@
       "description": "Description 9",
       "image": "waves-seen-from-the-sunset-cliffs-in-san-diego.jpg"
     }
+<<<<<<< HEAD
   ]
 }
+=======
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 },
+    { "id": 2, "body": "some comment", "postId": 1 }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
+>>>>>>> 46340cd739d727684b74b69971f45f95d13a82bb
