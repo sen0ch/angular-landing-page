@@ -11,8 +11,7 @@ import { retry, catchError } from 'rxjs/operators';
 export class RestApiService {
 
   // Define API
-  // apiURL = 'http://157.230.186.10/api/db.json';
-  apiURL = 'https://my-json-server.typicode.com/sen0ch/db';
+  apiURL = 'https://my-json-server.typicode.com/sen0ch/angular-landing-page/';
   // apiURL = 'http://localhost:3000';
 
   constructor(private http: HttpClient) { }
